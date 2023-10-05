@@ -11,6 +11,5 @@ Badiella, L., Puig, P., Lago-Peñas, C., & Casals, M. (2023). Influence of Red a
  https://doi.org/10.1007/s10479-022-04733-0.  
 Henderson, G., Christopher, B., & Portas, M. (2010). Factors associated with increased propensity for hamstring injury in English Premier League soccer players. Journal of 
  Science and Medicine in Sport, 13(4), 397-402. https://doi.org/10.1016/j.jsams.2009.08.003. 
-Sapp, R., Spangenburg, E., & Hagberg, J. (2018) Trends in aggressive play and refereeing among the top five European soccer leagues. Journal of Sports Sciences, 36(12), 1346- 
- 1354. https://doi.org/10.1080/02640414.2017.1377911 
+Sapp, R., Spangenburg, E., & Hagberg, J. (2018) Trends in aggressive play and refereeing among the top five European soccer leagues. Journal of Sports Sciences, 36(12), 1346-1354. https://doi.org/10.1080/02640414.2017.1377911 
 
