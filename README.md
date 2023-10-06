@@ -1,4 +1,6 @@
 # CALCULATING THE MOST DANGEROUS EPL GAME
+## Project Group 30
+### Emily Ngoc-Chau Nguyen Astillero, Avery Greer, Erica Izaguirre, Jungwoo Jang, Chae Hyun Kim
 Introduction  
 Among the professional leagues of association football or soccer, the English Premier League (EPL) stands as the most valuable and popular [2]. The literature also states that the EPL is one of the most aggressive leagues in the world, boasting a considerable number of injuries sustained within a season [1][3]. We seek to determine what is the most dangerous game possible, predicting using a combination of teams and a referee and with data from the recent seasons.
 
@@ -40,5 +42,6 @@ Contribution Table
 | Chae Hyun Kim | Methods & Potential Dataset |<br />
 
 Timeline
-![Screenshot (579)](https://github.com/JungwooJang119/JungwooJang119.github.io/assets/113401325/e7a501e3-ce07-474d-b710-42d31d56d07e)
+![Screenshot (570)](https://github.com/JungwooJang119/JungwooJang119.github.io/assets/113401325/ff6d4f2c-3e4e-4882-8fa4-ee8ffe791d7b)
+
 
