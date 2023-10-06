@@ -6,7 +6,7 @@ Problem Definition
 As the most popular and richest soccer league, the EPL is known for its aggressive playstyle with its high level of tackles and corresponding fouls [4]. The dataset chosen includes full game statistics during the 2020-21 and 2021-22  seasons, with the focus primarily on the number of fouls, yellow cards, red cards, and more. The goal of this project is to determine the most dangerous soccer game possible, with two of the most aggressive teams in the league and the most lenient referee.  
 
 Methods  
-We will use linear regression to predict the degree of danger with the weighted features (yellow cards, red cards, fouls, penalty kicks, etc.) as our input. These weighted input points would act as independent variables for us to observe how much influence each variable has on the degree of danger of a match.  
+We will use linear regression to predict the degree of danger with the weighted features (yellow cards, red cards, fouls, penalty kicks, etc.) as our input. These weighted input points would act as independent variables for us to observe how much influence each variable has on the degree of danger of a match.  Potential Dataset
 Linear regression will also allow us to analyze the referees of the Premier League. After we calculate an average for each referee of how many red cards, yellow cards, and fouls they call on each team. Our second independent variable for this second analysis will be the average amount of red cards, yellow cards, and fouls. This method will allow us to determine a coefficient of leniency for each referee that we can then compare to all others.  
 We will utilize linear regularization techniques such as LASSO regression as it will help us improve the performance of our linear regression model by finding a balance between model simplicity and accuracy. The regression will help us avoid overfitting, increase model interpretation, select a subset of appropriate variables, and improve prediction accuracy.  
 
@@ -29,3 +29,11 @@ Henderson, G., Christopher, B., & Portas, M. (2010). Factors associated with inc
 
 Sapp, R., Spangenburg, E., & Hagberg, J. (2018) Trends in aggressive play and refereeing among the top five European soccer leagues. Journal of Sports Sciences, 36(12), 1346-1354. https://doi.org/10.1080/02640414.2017.1377911 
 
+Contribution Table
+| Group Member | Contribution |
+|--------------|--------------|
+| Emily Ngoc-Chau Nguyen Astillero | Potential Results & Discussion |
+| Avery L Greer |Potential Results & Discussion |
+| Erica Izaguirre | Methods & Potential Dataset |
+| Jungwoo Jang| Introduction & Background, Problem Definition |
+| Chae Hyun Kim | Methods & Potential Dataset |
