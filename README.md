@@ -32,7 +32,7 @@ Sapp, R., Spangenburg, E., & Hagberg, J. (2018) Trends in aggressive play and re
 Contribution Table
 | Group Member | Contribution |
 |--------------|--------------|
-| Emily Ngoc-Chau Nguyen Astillero | Potential Results & Discussion |
+| Emily Ngoc-Chau Nguyen Astillero | Potential Results & Discussion, Citations |
 | Avery L Greer |Potential Results & Discussion |
 | Erica Izaguirre | Methods & Potential Dataset |
 | Jungwoo Jang| Introduction & Background, Problem Definition |
