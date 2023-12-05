@@ -91,7 +91,7 @@ Citations:
 Contribution Table
 | Group Member | Contribution |<br />
 |--------------|--------------|<br />
-| Emily Ngoc-Chau Nguyen Astillero | Potential Results & Discussion, Citations, Model 1 Cleaning & Pre-Processing |<br />
+| Emily Ngoc-Chau Nguyen Astillero | Potential Results & Discussion, Citations, Model 1 Cleaning & Pre-Processing, Results & Discussion, Conclusions |<br />
 | Avery L Greer |Potential Results & Discussion, Model 1 Coding |<br />
 | Erica Izaguirre | Methods & Potential Dataset, Model 1 Cleaning & Pre-Processing |<br />
 | Jungwoo Jang| Introduction & Background, Problem Definition, Model Results Evaluation & Analysis |<br />
