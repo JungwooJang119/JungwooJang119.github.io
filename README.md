@@ -40,9 +40,9 @@ The linear regression model for defenders returns the following graph and a R^2 
 
 The linear regression model for midfielders was created using data from failed tackles vs. number of fouls. The returned R^2 coefficient of determination was 0.84779. The graph below lists the approximate number of failed tackles in the X-axis and the number referee-called fouls along the Y-axis.
 
-insert picture here
 
-The linear regression model for forwards used data from the number of fouls vs. the number of yellow cards. This is because a majority of the data for forwards in the "tackles" and "tackles success" columns was NaN or 0. A reason for this is due to forwards being offensive players. Tackles are classified as a defensive player category, so forwards do not have many opportunities to tackle other players in soccer matches. Furthermore, we used yellow cards as metrics instead of tackles because the dataset has information on the number of yellow cards for forwards. Yellow cards also lead to fouls, so the change does not lead to extreme differences in determining how dangerous a player is. The returned R^2 coefficient of determination was 0.88563. The graph hosts the number of fouls along the X-axis and number of yellow cards along the Y-axis.
+
+The linear regression model for forwards used data from the number of fouls vs. the number of yellow cards. This is because a majority of the data for forwards in the "tackles" and "tackles success" columns was NaN or 0. A reason for this is due to forwards being offensive players. Tackles are classified as a defensive player category, so forwards do not have many opportunities to tackle other players in soccer matches. Furthermore, we used yellow cards as metrics instead of tackles because the dataset has information on the number of yellow cards for forwards. Yellow cards are issued by referees during soccer games to signal that a minor offense has been committed. Persistent fouling leads to yellow cards [5]. Since fouls lead to yellow cards, a dangerous player is determined by the higher number of fouls they have that maximizes their yellow card elgibility. Increased fouling and yellow cards leads to more injuries. The returned R^2 coefficient of determination was 0.88563. The graph hosts the number of fouls along the X-axis and number of yellow cards along the Y-axis.
 
 insert pic here
 
@@ -56,6 +56,11 @@ The results and the first graph for defenders show the clear linear correlation 
 
 The second graph for midfielders highlights a linear correlation between the number of failed tackles and number of fouls. The midfielders that committed a higher number of failed tackles were typically assigned more fouls by the referees. Therefore, we know that a majority of midfielder-related failed tackles were due to referee-assigned fouls. Accordingly, the points that have the greatest positive distance from the linear regression line represent the most dangerous midfielders. As previously mentioned, these outlier midfielders have a greater chance of earning more fouls by failing more tackles. The most dangerous midfielders are Erik Lamela, Moussa Sissoko, and James Milner. Three midfielders were chosen to follow the Premier League's team formation consisting of 4 defenders, 3 midfielders, and 3 forwards.
 
+The third graph detailing the correlation between the number of yellow cards and number of fouls is for determining the 3 most dangerous forwards. As evidenced by the R^2 correlation determinant, this graph highlights a positive correlation where the increased number of fouls leads to more yellow cards. As the fouls increase for a player, so do the chances of the player causing possible injuries to occur during a match. Thus, we find the 3 most aggressive forwards by calculating the points with the greatest positive distance from the linear regression line. As each point corresponds to a unique player, the three forwards added to our team are Diogo Jota, Sergio Agüero, and Willian Borges da Silva.
+
+The last graph encapsulates the correlation between red cards and fouls for forwards in the EPL. With a R^2 determinant correlation of 0.35591, we cannot conclude that there is a linear correlation between the two categories.
+
+Conclusions
 
 
 Citations:  
@@ -69,6 +74,8 @@ Citations:
  Science and Medicine in Sport, 13(4), 397-402. https://doi.org/10.1016/j.jsams.2009.08.003. 
 
 [4] Sapp, R., Spangenburg, E., & Hagberg, J. (2018) Trends in aggressive play and refereeing among the top five European soccer leagues. Journal of Sports Sciences, 36(12), 1346-1354. https://doi.org/10.1080/02640414.2017.1377911 
+
+[5] "A Guide to Yellow and Red Cards in Soccer." soccer.com. www.soccer.com/guide/guide-to-soccer-yellow-and-red-cards (Accessed December 4, 2023).
 
 Contribution Table
 | Group Member | Contribution |<br />
