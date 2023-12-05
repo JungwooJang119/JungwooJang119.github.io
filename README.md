@@ -40,15 +40,15 @@ The linear regression model for defenders returns the following graph and a R^2 
 
 The linear regression model for midfielders was created using data from failed tackles vs. number of fouls. The returned R^2 coefficient of determination was 0.84779. The graph below lists the approximate number of failed tackles in the X-axis and the number referee-called fouls along the Y-axis.
 
-
+![Midfielders](https://github.com/JungwooJang119/JungwooJang119.github.io/blob/main/midfielders.png)
 
 The linear regression model for forwards used data from the number of fouls vs. the number of yellow cards. This is because a majority of the data for forwards in the "tackles" and "tackles success" columns was NaN or 0. A reason for this is due to forwards being offensive players. Tackles are classified as a defensive player category, so forwards do not have many opportunities to tackle other players in soccer matches. Furthermore, we used yellow cards as metrics instead of tackles because the dataset has information on the number of yellow cards for forwards. Yellow cards are issued by referees during soccer games to signal that a minor offense has been committed. Persistent fouling leads to yellow cards [5]. Since fouls lead to yellow cards, a dangerous player is determined by the higher number of fouls they have that maximizes their yellow card elgibility. Increased fouling and yellow cards leads to more injuries. The returned R^2 coefficient of determination was 0.88563. The graph hosts the number of fouls along the X-axis and number of yellow cards along the Y-axis.
 
-insert pic here
+![Forwards](https://github.com/JungwooJang119/JungwooJang119.github.io/blob/main/forwards.png)
 
-The last graph mapped the correlation between the number of fouls and number of red cards. The R^2 coefficient of determination was 0.35591. The graph has the number of fouls along the X-axis and number of red cards along the Y-axis.
+The last graph mapped the correlation between the number of fouls and number of red cards for forwards. The R^2 coefficient of determination was 0.35591. The graph has the number of fouls along the X-axis and number of red cards along the Y-axis.
 
-insert pic here
+![RedCards vs. Number of Fouls](https://github.com/JungwooJang119/JungwooJang119.github.io/blob/main/redcards.png)
 
 Analysis and Discussion
 
@@ -70,7 +70,7 @@ The most dangerous team crafted from the English Premier League is composed of P
 
 Selecting the 3 most violent forwards was a similar process to selecting the defenders and midfielders, except we observed different categories for our model. The number of yellow cards vs. number of fouls was used instead because forwards are offensive players. Tackles are moves performed by defensive players, so we chose categories that lead to a correlation where we can extrapolate the most aggressive forwards. As a result, the positive correlation between the number of fouls and yellow cards meaning that increased fouls leads to increased yellow cards. Injuries increase as fouls increase, thus we chose the three outlier data points with the greatest positive distance from the regression line.
 
-The last model determined the correlation between the number of red cards and number of fouls. The weak R^2 value gave us little information because EPL players typically stray away from earning red cards in order to not be removed from the game. So, we did not choose the three most aggressive forwards from this model.
+The last model determined the correlation between the number of red cards and number of fouls for forwards. The weak R^2 value gave us little information because EPL players typically stray away from earning red cards in order to not be removed from the game. So, we did not choose the three most aggressive forwards from this model.
 
 The team composed from our dataset is proven to host the most dangerous players since they all maximize the likelihood of causing injuries during a soccer match.
 
