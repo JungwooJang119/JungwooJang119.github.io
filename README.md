@@ -36,9 +36,23 @@ The linear regression model for defenders returns the following graph and a R^2 
 
 ![Defendersver 2](https://github.com/JungwooJang119/JungwooJang119.github.io/assets/113401325/02eee400-a20a-4c00-8721-5faad49b0b9c)
 
+The linear regression model for midfielders was created using data from failed tackles vs. number of fouls. The returned R^2 coefficient of determination was 0.84779. The graph below lists the approximate number of failed tackles in the X-axis and the number referee-called fouls along the Y-axis.
+
+insert picture here
+
+The linear regression model for forwards used data from the number of fouls vs. the number of yellow cards. This is because a majority of the data for forwards in the "tackles" and "tackles success" columns was NaN or 0. Thus, we used yellow cards as metrics instead of tackles because the dataset has information on the number of yellow cards for forwards. Yellow cards also lead to fouls, so the change does not lead to extreme differences in determining how dangerous a player is. The returned R^2 coefficient of determination was 0.88563. The graph hosts the number of fouls along the X-axis and number of yellow cards along the Y-axis.
+
+insert pic here
+
+The last graph mapped the correlation between the number of fouls and number of red cards. The R^2 coefficient of determination was 0.35591. The graph has the number of fouls along the X-axis and number of red cards along the Y-axis.
+
+insert pic here
+
 Analysis and Discussion
 
-The results and the graph show the clear linear correlation that we expected from running this model. Most Premier League defenders who committed a certain number of failed tackles were called out for committing fouls at a predictable rate. In this model, we can identify the defenders that we considered the most dangerous, ones who commit more fouls than predicted from their number of failed tackles. By choosing the points that have the greatest distance from the linear regression line created from the model, we can see that the four defenders that are the most dangerous are the following players: Phil Jagielka, Andrew Robertson, Patrick van Aanholt, and Aaron Wan-Bissaka. We choose four defenders as our team will follow a 4-3-3 formation, a typical formation in the Premier League.
+The results and the first graph for defenders show the clear linear correlation that we expected from running this model. Most Premier League defenders who committed a certain number of failed tackles were called out for committing fouls at a predictable rate. In this model, we can identify the defenders that we considered the most dangerous, ones who commit more fouls than predicted from their number of failed tackles. By choosing the points that have the greatest distance from the linear regression line created from the model, we can see that the four defenders that are the most dangerous are the following players: Phil Jagielka, Andrew Robertson, Patrick van Aanholt, and Aaron Wan-Bissaka. We choose four defenders as our team will follow a 4-3-3 formation, a typical formation in the Premier League.
+
+The second graph for midfielders highlights a linear correlation between the number of failed tackles and number of fouls. The midfielders that committed a higher number of failed tackles were typically assigned more fouls by the referees.
 
 Citations:  
 [1] Argibay-González, J.C., Vázquez-Estévez, C., Gutiérrez-Santiago, A., Paramés-González, A., Reguera-López-de-la-Osa, X., & Prieto-Lage, I. (2022) Analysis of Injury Patterns in Men’s Football between the English League and the Spanish League. International Journal of Environmental Research and Public Health, 19(18), 
