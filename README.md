@@ -66,7 +66,13 @@ Unlike the models for midfielders and defenders, the graph for forwards uses yel
 
 Conclusions
 
-The most dangerous team crafted from the English Premier League is composed of Phil Jagielka, Andrew Robertson, Patrick van Aanholt, Aaron Wan-Bissaka, Erik Lamela, Moussa Sissoko, James Milner, Diogo Jota, Sergio Agüero, and Willian Borges da Silva.
+The most dangerous team crafted from the English Premier League is composed of Phil Jagielka, Andrew Robertson, Patrick van Aanholt, Aaron Wan-Bissaka, Erik Lamela, Moussa Sissoko, James Milner, Diogo Jota, Sergio Agüero, and Willian Borges da Silva. These 10 players were found to be the most aggressive in their respective positions. Basing our project around the fact that tackle-related fouls encompass a considerable number of tackle-related injuries, we were able to find the 4 most dangerous defenders and 3 most aggressive midfielders. Incorporating linear regression into our project allowed us to first delineate that there was a positive correlation between unsuccessful tackles and fouls - as unsuccessful tackles increase, tackle-related fouls also increase. Depending on a player, this leads to a higher possibility of injuries occurring in a match.
+
+Selecting the 3 most violent forwards was a similar process to selecting the defenders and midfielders, except we observed different categories for our model. The number of yellow cards vs. number of fouls was used instead because forwards are offensive players. Tackles are moves performed by defensive players, so we chose categories that lead to a correlation where we can extrapolate the most aggressive forwards. As a result, the positive correlation between the number of fouls and yellow cards meaning that increased fouls leads to increased yellow cards. Injuries increase as fouls increase, thus we chose the three outlier data points with the greatest positive distance from the regression line.
+
+The last model determined the correlation between the number of red cards and number of fouls. The weak R^2 value gave us little information because EPL players typically stray away from earning red cards in order to not be removed from the game. So, we did not choose the three most aggressive forwards from this model.
+
+The team composed from our dataset is proven to host the most dangerous players since they all maximize the likelihood of causing injuries during a soccer match.
 
 Citations:  
 [1] Argibay-González, J.C., Vázquez-Estévez, C., Gutiérrez-Santiago, A., Paramés-González, A., Reguera-López-de-la-Osa, X., & Prieto-Lage, I. (2022) Analysis of Injury Patterns in Men’s Football between the English League and the Spanish League. International Journal of Environmental Research and Public Health, 19(18), 
