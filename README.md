@@ -38,23 +38,29 @@ The linear regression model for defenders returns the following graph and a R^2 
 
 ![Defendersver 2](https://github.com/JungwooJang119/JungwooJang119.github.io/assets/113401325/02eee400-a20a-4c00-8721-5faad49b0b9c)
 
+Model 2: Midfielders
+
 The linear regression model for midfielders was created using data from failed tackles vs. number of fouls. The returned R^2 coefficient of determination was 0.84779. The graph below lists the approximate number of failed tackles in the X-axis and the number referee-called fouls along the Y-axis.
 
-![Midfielders](https://github.com/JungwooJang119/JungwooJang119.github.io/blob/main/midfielders.png)
+![Screenshot (623)](https://github.com/JungwooJang119/JungwooJang119.github.io/assets/113401325/f0727142-fa6d-42bf-ba23-a090d349ce6e)
+
+Model 3: Forwards
 
 The linear regression model for forwards used data from the number of fouls vs. the number of yellow cards. This is because a majority of the data for forwards in the "tackles" and "tackles success" columns was NaN or 0. A reason for this is due to forwards being offensive players. Tackles are classified as a defensive player category, so forwards do not have many opportunities to tackle other players in soccer matches. Furthermore, we used yellow cards as metrics instead of tackles because the dataset has information on the number of yellow cards for forwards. Yellow cards are issued by referees during soccer games to signal that a minor offense has been committed. Persistent fouling leads to yellow cards [5]. Since fouls lead to yellow cards, a dangerous player is determined by the higher number of fouls they have that maximizes their yellow card elgibility. Increased fouling and yellow cards leads to more injuries. The returned R^2 coefficient of determination was 0.88563. The graph hosts the number of fouls along the X-axis and number of yellow cards along the Y-axis.
 
-![Forwards](https://github.com/JungwooJang119/JungwooJang119.github.io/blob/main/forwards.png)
+![Screenshot (624)](https://github.com/JungwooJang119/JungwooJang119.github.io/assets/113401325/b229e230-fada-4605-996e-e31ec6bf43be)
+
+Additional Observation: Red Cards for Forwards
 
 The last graph mapped the correlation between the number of fouls and number of red cards for forwards. The R^2 coefficient of determination was 0.35591. The graph has the number of fouls along the X-axis and number of red cards along the Y-axis.
 
-![RedCards vs. Number of Fouls](https://github.com/JungwooJang119/JungwooJang119.github.io/blob/main/redcards.png)
+![Screenshot (630)](https://github.com/JungwooJang119/JungwooJang119.github.io/assets/113401325/80685ea0-2e48-43cd-b8d6-c28e04929d37)
 
 Analysis and Discussion
 
 The results and the first model for defenders show the clear linear correlation that we expected from running this model. Most Premier League defenders who committed a certain number of failed tackles were called out for committing fouls at a predictable rate. In this model, we can identify the defenders that we considered the most dangerous, ones who commit more fouls than predicted from their number of failed tackles. By choosing the points that have the greatest distance from the linear regression line created from the model, we can see that the four defenders that are the most dangerous are the following players: Phil Jagielka, Andrew Robertson, Patrick van Aanholt, and Aaron Wan-Bissaka. This is because the outliers have a higher number of fouls per tackle failed. Knowing that tackles deemed as fouls are responsible for a great percentage of tackle-related injuries, the four chosen players have a higher chance of creating more fouls when they fail more tackles. Thus, leading to more tackle-related injuries. We chose four defenders as our team will follow a 4-3-3 formation, a typical formation in the Premier League.
 
-The second model for midfielders highlights a linear correlation between the number of failed tackles and number of fouls. The midfielders that committed a higher number of failed tackles were typically assigned more fouls by the referees. Therefore, we know that a majority of midfielder-related failed tackles were due to referee-assigned fouls. Accordingly, the points that have the greatest positive distance from the linear regression line represent the most dangerous midfielders. As previously mentioned, these outlier midfielders have a greater chance of earning more fouls by failing more tackles. The most dangerous midfielders are Erik Lamela, Moussa Sissoko, and James Milner. Three midfielders were chosen to follow the Premier League's team formation consisting of 4 defenders, 3 midfielders, and 3 forwards.
+The second model for midfielders highlights a linear correlation between the number of failed tackles and number of fouls. The midfielders that committed a higher number of failed tackles were typically assigned more fouls by the referees. Therefore, we know that a majority of midfielder-related failed tackles were due to referee-assigned fouls. Accordingly, the points that have the greatest positive distance from the linear regression line represent the most dangerous midfielders. As previously mentioned, these outlier midfielders have a greater chance of earning more fouls by failing more tackles. The most dangerous midfielders are Declan Rice, Wilfred Ndidi, and Dwight McNeil. Three midfielders were chosen to follow the Premier League's team formation consisting of 4 defenders, 3 midfielders, and 3 forwards.
 
 The third model detailing the correlation between the number of yellow cards and number of fouls is for determining the 3 most dangerous forwards. As evidenced by the R^2 correlation determinant, this graph highlights a positive correlation where the increased number of fouls leads to more yellow cards. As the fouls increase for a player, so do the chances of the player causing possible injuries to occur during a match. Thus, we find the 3 most aggressive forwards by calculating the points with the greatest positive distance from the linear regression line. As each point corresponds to a unique player, the three forwards added to our team are Diogo Jota, Sergio Agüero, and Willian Borges da Silva.
 
@@ -66,13 +72,13 @@ Unlike the models for midfielders and defenders, the graph for forwards uses yel
 
 Conclusions
 
-The most dangerous team crafted from the English Premier League is composed of Phil Jagielka, Andrew Robertson, Patrick van Aanholt, Aaron Wan-Bissaka, Erik Lamela, Moussa Sissoko, James Milner, Diogo Jota, Sergio Agüero, and Willian Borges da Silva. These 10 players were found to be the most aggressive in their respective positions. Basing our project around the fact that tackle-related fouls encompass a considerable number of tackle-related injuries, we were able to find the 4 most dangerous defenders and 3 most aggressive midfielders. Incorporating linear regression into our project allowed us to first delineate that there was a positive correlation between unsuccessful tackles and fouls - as unsuccessful tackles increase, tackle-related fouls also increase. Depending on a player, this leads to a higher possibility of injuries occurring in a match.
+The most dangerous team crafted from the English Premier League is composed of Phil Jagielka, Andrew Robertson, Patrick van Aanholt, Aaron Wan-Bissaka, Declan Rice, Wilfred Ndidi, Dwight McNeil, Diogo Jota, Sergio Agüero, and Willian Borges da Silva. These 10 players were found to be the most aggressive in their respective positions. Basing our project around the fact that tackle-related fouls encompass a considerable number of tackle-related injuries, we were able to find the 4 most dangerous defenders and 3 most aggressive midfielders. Incorporating linear regression into our project allowed us to first delineate that there was a positive correlation between unsuccessful tackles and fouls - as unsuccessful tackles increase, tackle-related fouls also increase. Depending on a player, this leads to a higher possibility of injuries occurring in a match.
 
 Selecting the 3 most violent forwards was a similar process to selecting the defenders and midfielders, except we observed different categories for our model. The number of yellow cards vs. number of fouls was used instead because forwards are offensive players. Tackles are moves performed by defensive players, so we chose categories that lead to a correlation where we can extrapolate the most aggressive forwards. As a result, the positive correlation between the number of fouls and yellow cards meaning that increased fouls leads to increased yellow cards. Injuries increase as fouls increase, thus we chose the three outlier data points with the greatest positive distance from the regression line.
 
 The last model determined the correlation between the number of red cards and number of fouls for forwards. The weak R^2 value gave us little information because EPL players typically stray away from earning red cards in order to not be removed from the game. So, we did not choose the three most aggressive forwards from this model.
 
-The team composed from our dataset is proven to host the most dangerous players since they all maximize the likelihood of causing injuries during a soccer match.
+The team composed from our dataset is proven to host the most dangerous players since they all maximize the likelihood of causing injuries during a soccer match. Given the results that we observed, we believe that our models and proceses sufficiently calculate what would be the most dangerous EPL team using linear regression.
 
 Citations:  
 [1] Argibay-González, J.C., Vázquez-Estévez, C., Gutiérrez-Santiago, A., Paramés-González, A., Reguera-López-de-la-Osa, X., & Prieto-Lage, I. (2022) Analysis of Injury Patterns in Men’s Football between the English League and the Spanish League. International Journal of Environmental Research and Public Health, 19(18), 
@@ -91,12 +97,12 @@ Citations:
 Contribution Table
 | Group Member | Contribution |<br />
 |--------------|--------------|<br />
-| Emily Ngoc-Chau Nguyen Astillero | Potential Results & Discussion, Citations, Model 1 Cleaning & Pre-Processing, Results & Discussion, Conclusions |<br />
-| Avery L Greer |Potential Results & Discussion, Model 1 Coding |<br />
-| Erica Izaguirre | Methods & Potential Dataset, Model 1 Cleaning & Pre-Processing |<br />
-| Jungwoo Jang| Introduction & Background, Problem Definition, Model Results Evaluation & Analysis |<br />
-| Chae Hyun Kim | Methods & Potential Dataset, Model 1 Selection & Coding |<br />
-| All | Midterm Report |<br />
+| Emily Ngoc-Chau Nguyen Astillero | Potential Results, Citations, Coding (Model 2 and 3)  |<br />
+| Avery L Greer | Potential Discussion, Coding (Model 1 and 2), Model 3 Pre-Processing |<br />
+| Erica Izaguirre | Methods & Potential Dataset, Cleaning & Pre-Processing (Model 1 and 2) |<br />
+| Jungwoo Jang| Introduction & Background, Problem Definition, Results & Analysis (Model 2 and 3) |<br />
+| Chae Hyun Kim | Methods & Potential Dataset, Model Selection, Model 2 Cleaning, Results & Analysis (Model 1) |<br />
+| All | Midterm Report, Final Report, Presentation |<br />
 
 Timeline
 ![Screenshot (570)](https://github.com/JungwooJang119/JungwooJang119.github.io/assets/113401325/ff6d4f2c-3e4e-4882-8fa4-ee8ffe791d7b)
